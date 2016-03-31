@@ -172,6 +172,11 @@ public class VideoProvider {
                 }
             }
         }
+
+        List<MediaTrack> tracks = new ArrayList<>();
+        tracks.add(buildTrack(0, "video", null, "trackId", "Funimation Test", "Japanese"));
+        mediaList.add(buildMediaInfo("Funimation Test", "Funimation", "Subtitle", 2000, "https://d132fumi6di1wa.cloudfront.net/FunimationStoreFront/1287837/English/1287837_English_6c089b98-14df-e511-80c5-0017a4776c06.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTMyZnVtaTZkaTF3YS5jbG91ZGZyb250Lm5ldC8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNDU5ODExMjgyfX19XX0_&Signature=NePzA4VEHvPLYLarpanq-B5FW~niuBJDNzLS8bzMVVR0F5pzkjVtU8F~eTyXV-A2tjasCoBJgMdGYd7F~QVDL78QPTGViVuMgBqrUzKCvLb1MtWm6Xo1ECCCEGh8qXYHd3vEuXBOsOZTyonwceZtcUyHOUBwoOc-gg~dEPtGuiIE~wnemDO~vbeWiYkIWPDtVGe4yE-Kul9qAimrd-L~8Pc2c8SnAa~GsXvqdA8VBL278Qt4hDRES7gu7Uewg0wNupfAsW3fCSvYHMzgY2UFQLoUxANzvwGQlwRXQ1CYyxADXnL7wO7eQQX2fIm2Luy0HgZaUmjbv4eIWXldSbo95A__&Key-Pair-Id=APKAIHNXECY27H4O6NIA", "application/x-mpegurl", "http://www.funimation.com/admin/uploads/default/shows/show_thumbnail/2_thumbnail/DNH_thumb1.jpeg", "http://www.underconsideration.com/brandnew/archives/funimation_logo.png", tracks));
+        mediaList.add(buildMediaInfo("Unencrypted HLS Test", "Test", "Subtitle", 2000, "https://stgcme.s3.amazonaws.com/Funimation_Dev/AC_no_encryption_032916/AC_no_encryption_032916.m3u8", "application/x-mpegurl", "http://www.funimation.com/admin/uploads/default/shows/show_thumbnail/2_thumbnail/DNH_thumb1.jpeg", "http://www.underconsideration.com/brandnew/archives/funimation_logo.png", tracks));
         return mediaList;
     }
 
